@@ -18,13 +18,12 @@ function pressEvent(e) {
     $('.insert')
         .append(`
         <div class="key">
-        ${key} 
+        ${ key === ' ' ? 'space' : key} 
         <small>event.key</small>
      </div>
 
      <div class="key">
      ${charCode} 
-     <small>ev
          <small>event.KeyCode</small>
      </div>
      <div class="key">
